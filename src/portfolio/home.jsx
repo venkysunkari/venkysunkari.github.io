@@ -486,7 +486,7 @@ class Home extends Component {
                     </Grid>
                     <Grid item container justify="center" alignItems="center">
                       <Grid item xs={3}>
-                        <Typography variant="body1">Django</Typography>
+                        <Typography variant="body1">Spring Boot</Typography>
                       </Grid>
                       <Grid item xs className={dark ? "bar dark" : "bar"}>
                         <div className={this.state.djangoclass}></div>
