@@ -1,0 +1,544 @@
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.wrapper-paper {
+  min-height: 100vh;
+  width: 100%;
+  margin: 0px;
+  overflow: scroll;
+}
+/*skills bar  */
+.grid {
+  width: 300px;
+  margin: 40px 100px;
+}
+
+.bar {
+  background: black;
+  height: 5px;
+  margin-top: auto;
+
+  transition: all 0.5s ease-in-out;
+}
+.bar.dark {
+  background: black;
+}
+.bar.dark .common {
+  background: #64ffda;
+}
+.common {
+  background: red;
+  height: 100%;
+  width: 0;
+}
+.html-active {
+  animation: html 0.6s linear;
+  transition: all 0.6s ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes html {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 80%;
+  }
+}
+.django-active {
+  animation: django 0.6s linear;
+  transition: all 0.6s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 0.8s;
+}
+@keyframes django {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 89%;
+  }
+}
+
+.css-active {
+  animation: css 0.6s linear;
+  transition: all 0.6s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 0.2s;
+}
+@keyframes css {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 80%;
+  }
+}
+
+.js-active {
+  animation: js 0.6s linear;
+  transition: all 0.6s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 0.4s;
+}
+@keyframes js {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 76%;
+  }
+}
+
+.react-active {
+  animation: react 0.6s linear;
+  transition: all 0.6s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 0.6s;
+}
+@keyframes react {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 85%;
+  }
+}
+.mysql-active {
+  animation: mysql 0.6s linear;
+  transition: all 0.6s wase-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+@keyframes mysql {
+  from {
+    width: 0;
+  }
+  to {
+    width: 67%;
+  }
+}
+
+/* Intro letter animation */
+.box {
+  margin: 200px auto;
+  animation: fadeout 0.5s linear forwards;
+  animation-delay: 2.3s;
+  opacity: 1;
+  width: 100px;
+  height: auto;
+  transition: all 0.5s ease-in-out;
+  transform: scale(1);
+}
+@keyframes fadeout {
+  98% {
+    transform: scale(0.3);
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    display: none;
+  }
+}
+.icon {
+  transform: rotate(-90deg);
+}
+.icon path {
+  stroke: red;
+  stroke-width: 25;
+  stroke-dasharray: 1540;
+  fill: transparent;
+  opacity: 1;
+  animation-delay: 0.5s;
+  animation: fade 2s linear forwards;
+}
+.icon.dark path {
+  stroke: #64ffda;
+}
+@keyframes fade {
+  0% {
+    stroke-dashoffset: 1500;
+  }
+  25% {
+    stroke-dashoffset: 1450;
+  }
+  55% {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+}
+.s {
+  opacity: 0;
+  color: red;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3.3rem;
+  animation: letter 0.5s linear forwards;
+  animation-delay: 1.5s;
+  font-family: initial;
+}
+.s.dark {
+  color: #64ffda;
+}
+@keyframes letter {
+  to {
+    opacity: 1;
+  }
+}
+
+/* hamburger menu*/
+.hamburger {
+  padding-top: 6px;
+  width: 30px;
+  height: 30px;
+  transform: rotateY(180deg);
+  cursor: pointer;
+  margin: 10px auto;
+  transition: all 3s ease-in-out;
+  z-index: 100;
+}
+.hamburger div {
+  margin: 4px;
+  transition: all 0.9s ease-in-out;
+}
+.span1 {
+  width: 99%;
+  height: 2px;
+  background: black;
+  transform: rotate(0);
+}
+.span2 {
+  width: 66%;
+  height: 2px;
+  background: black;
+}
+.span3 {
+  width: 33%;
+  height: 2px;
+  background: black;
+}
+.span1.dark,
+.span2.dark,
+.span3.dark {
+  background: #64ffda;
+}
+.hamburger.open div {
+  transition: 0.2s all ease-in-out;
+}
+.hamburger.open .span1 {
+  animation: rotate 0.3s linear forwards;
+  margin-bottom: -6px;
+  animation-delay: 0.5s;
+}
+@keyframes rotate {
+  to {
+    transform: rotate(45deg);
+    width: 20px;
+  }
+}
+.hamburger.open .span3 {
+  margin-top: -6px;
+
+  animation: rotate2 0.3s linear forwards;
+  animation-delay: 0.5s;
+}
+@keyframes rotate2 {
+  to {
+    width: 20px;
+    transform: rotate(-45deg);
+  }
+}
+.hamburger.open .span2 {
+  width: 0;
+}
+
+/*  */
+
+/* appbar */
+.box1 {
+  width: 48px;
+  height: auto;
+  position: relative;
+  padding-left: 4px;
+  margin-top: 0;
+}
+.icon1 {
+  transform: rotate(-90deg);
+}
+.icon1 path {
+  stroke: white;
+  stroke-width: 50;
+  fill: transparent;
+  stroke-width: 10;
+}
+.icon1.dark path {
+  stroke: #64ffda;
+}
+.s1 {
+  font-size: 1.4rem;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: initial;
+}
+.s1.dark {
+  color: #64ffda;
+}
+.nav-ref {
+  color: white;
+  cursor: pointer;
+}
+.nav-ref.dark {
+  color: #64ffda;
+}
+.hamburger-list {
+  width: 200px;
+  height: auto;
+  margin-top: 30%;
+  text-align: center;
+}
+.drawer-ham-icon {
+  text-align: right;
+  width: 50px;
+  margin-left: auto;
+  margin-right: 0px;
+  margin-top: 10px;
+}
+/* name-intro */
+.name-intro {
+  margin: 90px 100px;
+}
+.intro-para {
+  margin-left: 100px;
+}
+.intro-para p {
+  letter-spacing: 0.08rem;
+}
+.intro-para button {
+  margin-top: 20px;
+  text-transform: initial;
+  letter-spacing: 0.1rem;
+}
+/* about-me */
+.about-me {
+  width: 800px;
+  margin: 160px auto;
+  justify-items: center;
+  align-items: center;
+  height: auto;
+}
+.about-me p {
+  line-height: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+/* skills */
+.skills {
+  width: 800px;
+  margin: 30px auto;
+}
+
+/* social media pc */
+.social-media-sm {
+  position: fixed;
+  bottom: 0;
+  left: 10;
+  padding: 36px 20px;
+}
+.social-divider-grid {
+  padding-left: 7px;
+  width: 8px;
+  height: 10px;
+  transform: rotate(90deg);
+  padding-bottom: 0px;
+}
+/* social media mobile */
+.social-media-xs {
+  width: 240px;
+
+  height: auto;
+  margin: 20px auto;
+}
+/* contact */
+.contact {
+  width: 800px;
+  margin: 50px auto;
+  height: auto;
+}
+.paper-cards-contact {
+  width: auto;
+  height: auto;
+  margin: 30px auto;
+
+  justify-content: space-evenly;
+}
+.contact-paper {
+  width: 200px;
+  height: 140px;
+  margin: 0px auto;
+  cursor: pointer;
+}
+.x {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  align-items: center;
+  vertical-align: middle;
+}
+/* projects */
+.projects {
+  width: 800px;
+  margin: 40px auto;
+}
+.projects h4 {
+  font-size: 2rem;
+}
+.project-card {
+  width: 320px;
+  height: 400px;
+  margin: 60px 0;
+}
+.project-card2 {
+  margin-left: auto;
+  margin-right: 0px;
+  width: 320px;
+  height: 400px;
+}
+.project-card button {
+  font-size: 0.6rem;
+  text-transform: initial;
+  letter-spacing: 0.06rem;
+  padding: 2px 0px;
+}
+
+.one,
+.two {
+  width: 200px;
+  margin-left: auto;
+  margin-right: 0;
+  text-align: right;
+  margin-top: 10px;
+}
+.two {
+  margin-top: 10px;
+}
+.three {
+  margin-top: 15px;
+  text-align: right;
+  font-size: 0.2rem;
+}
+.topic {
+  border: solid 1px blue;
+  color: blue;
+  padding: 2px 4px;
+  margin: 0px 4px;
+  font-size: 0.8rem;
+  border-radius: 4px;
+}
+.topic.dark {
+  border: solid 1px #64ffda;
+  color: #64ffda;
+}
+/* tabs div */
+.projects-tab {
+  max-width: 300px;
+  margin: 10px auto;
+}
+/* other noteworthy projects */
+.other-note-worthy {
+  padding: 6px 10px;
+  margin: 20px auto;
+}
+
+/* media queries */
+@media only screen and (max-width: 409px) {
+  .projects {
+    width: 100%;
+  }
+  .project-card,
+  .project-card2 {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .box {
+    width: 80px;
+    margin: 250px auto;
+  }
+  .s {
+    font-size: 2.2rem;
+  }
+  .box1 {
+    width: 40px;
+    margin-top: 3px;
+  }
+  .name-intro,
+  .intro-para {
+    margin-left: 30px;
+  }
+  .name-intro h2 {
+    font-size: 2.4rem;
+  }
+  .name-intro h3 {
+    font-size: 2rem;
+  }
+  .about-me {
+    width: 90%;
+    margin-bottom: 80px;
+  }
+  .about-me h4,
+  .skills h4,
+  .projects h4,
+  .contact h4 {
+    font-size: 1.3rem;
+  }
+  .skills {
+    width: 90%;
+  }
+  .grid {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+  }
+  .projects {
+    width: 90%;
+  }
+  .project-card2,
+  .project-card {
+    margin: 50px auto;
+  }
+  .other-note-worthy {
+    width: 100%;
+    margin: 20px auto;
+  }
+  .projects-tab {
+    width: 200px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .about-me {
+    width: 80%;
+  }
+  .skills {
+    width: 80%;
+  }
+  .projects {
+    width: 80%;
+  }
+  .contact {
+    width: 80%;
+  }
+}
