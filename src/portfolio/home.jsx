@@ -432,11 +432,8 @@ class Home extends Component {
                       alignItems="center"
                     >
                       <Grid item xs>
-                        <Typography variant="body1">
-                          Other technologies I have worked upon
-                        </Typography>
                         <List>
-                          {["C", "C++", "Python", "Java"].map((e) => (
+                          {["C/C++", "Java", "Python", "MySQL, MongoDB", "Salesforce, AWS, Azure, GIT"].map((e) => (
                             <ListItem>
                               <ListItemText>{e}</ListItemText>
                             </ListItem>
@@ -476,7 +473,7 @@ class Home extends Component {
                     <Grid item container justify="center" alignItems="center">
                       <Grid item xs={3}>
                         <Typography variant="body1" color="default">
-                          JS
+                          JavaScript
                         </Typography>
                       </Grid>
                       <Grid item xs className={dark ? "bar dark" : "bar"}>
@@ -501,7 +498,7 @@ class Home extends Component {
                     </Grid>
                     <Grid item container justify="center" alignItems="center">
                       <Grid item xs={3}>
-                        <Typography variant="body1">Mysql</Typography>
+                        <Typography variant="body1">NodeJS</Typography>
                       </Grid>
                       <Grid item xs className={dark ? "bar dark" : "bar"}>
                         <div className={this.state.mysqlclass}></div>
