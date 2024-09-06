@@ -335,11 +335,7 @@ body {
 /* about-me */
 .about-me {
   width: 800px;
-<<<<<<< HEAD
-  margin: 160px auto;
-=======
   margin: 20px auto;
->>>>>>> 7e1d038 (final)
   justify-items: center;
   align-items: center;
   height: auto;
@@ -351,11 +347,7 @@ body {
 /* skills */
 .skills {
   width: 800px;
-<<<<<<< HEAD
-  margin: 30px auto;
-=======
   margin: 10px auto;
->>>>>>> 7e1d038 (final)
 }
 
 /* social media pc */
@@ -540,23 +532,17 @@ body {
   .about-me {
     width: 80%;
   }
-<<<<<<< HEAD
-=======
   .experience-education {
     width: 80%;
   }
->>>>>>> 7e1d038 (final)
   .skills {
     width: 80%;
   }
   .projects {
     width: 80%;
-<<<<<<< HEAD
-  }
-=======
   } 
->>>>>>> 7e1d038 (final)
   .contact {
     width: 80%;
   }
 }
+
