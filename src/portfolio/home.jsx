@@ -570,7 +570,8 @@ class Home extends Component {
                       justify="center"
                       alignItems="center"
                     >
-                      <Grid item xs>
+                      <Grid item xs marginTop= "2px" >
+                        <br />
                         <List>
                           {["C/C++", "Java", "Python", "MySQL, MongoDB", "Salesforce, AWS, Azure, GIT"].map((e) => (
                             <ListItem>
@@ -651,7 +652,7 @@ class Home extends Component {
                           Other technologies I have worked upon{" "}
                         </Typography>
                       </Grid>
-                      <Grid item container xs style={{ marginTop: "10px" }}>
+                      <Grid item container xs style={{ marginTop: "5px" }}>
                         {["C", "C++", "Python", "Java"].map((e) => (
                           <Grid item xs>
                             <span className={dark ? "topic dark" : "topic"}>
