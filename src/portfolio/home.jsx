@@ -271,12 +271,6 @@ class Home extends Component {
                                     behavior: "smooth",
                                   });
                             }}
-                            style={{
-                              padding: "10px 12px", 
-                              cursor: "pointer", 
-                              backgroundColor: "transparent", 
-                              transition: "background-color 0.3s ease",
-                            }}
                             onMouseEnter={(e) => {
                               e.currentTarget.querySelector("p").style.color = "black"; // Change text color on hover
                             }}
