@@ -271,6 +271,24 @@ class Home extends Component {
                                     behavior: "smooth",
                                   });
                             }}
+                            style={{
+                              padding: "10px 12px", 
+                              cursor: "pointer", 
+                              backgroundColor: "transparent", 
+                              transition: "background-color 0.3s ease",
+                            }}
+                            onMouseEnter={(e) => {
+                              e.currentTarget.querySelector("p").style.color = "black"; // Change text color on hover
+                            }}
+                            onMouseLeave={(e) => {
+                              e.currentTarget.querySelector("p").style.color = ""; // Reset text color
+                            }}
+                           // onMouseEnter={(e) => {
+                            //  e.currentTarget.style.backgroundColor = "rgba(0, 0, 0, 0.1)";
+                          //  }}
+                           // onMouseLeave={(e) => {
+                          //    e.currentTarget.style.backgroundColor = "transparent";
+                           // }}
                           >
                             <Typography variant="body1">{e}</Typography>
                           </Grid>
@@ -304,6 +322,8 @@ class Home extends Component {
                 variant="subtitle1"
                 style={dark ? { color: "#64ffda" } : { color: "red" }}
               >
+                <br />
+                <br />
                 Hi. I'm
               </Typography>
               <Typography variant="h2">Venkataramana Sunkari</Typography>
@@ -311,7 +331,7 @@ class Home extends Component {
                 I build things with passion for the web
               </Typography>
             </div>
-            <div className="intro-para" data-aos="fade" data-aos-delay="500">
+            <div className="intro-para" data-aos="fade" data-aos-delay="300">
               <Typography variant="h6">
                 I'm a self taught full stack developer.
               </Typography>
