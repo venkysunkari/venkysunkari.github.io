@@ -610,7 +610,7 @@ class Home extends Component {
                   >
                     <Grid item container justify="center" alignItems="center">
                       <Grid item xs={3}>
-                        <Typography variant="body1">HTML</Typography>
+                        <Typography variant="body1">HTML/CSS</Typography>
                       </Grid>
                       <Grid item xs className={dark ? "bar dark" : "bar"}>
                         <div className={this.state.htmlclass}></div>
@@ -618,7 +618,7 @@ class Home extends Component {
                     </Grid>
                     <Grid item container justify="center" alignItems="center">
                       <Grid item xs={3}>
-                        <Typography variant="body1">CSS</Typography>
+                        <Typography variant="body1">React</Typography>
                       </Grid>
                       <Grid item xs className={dark ? "bar dark" : "bar"}>
                         <div className={this.state.cssclass}></div>
@@ -627,7 +627,7 @@ class Home extends Component {
                     <Grid item container justify="center" alignItems="center">
                       <Grid item xs={3}>
                         <Typography variant="body1" color="default">
-                          JavaScript
+                        JavaScript
                         </Typography>
                       </Grid>
                       <Grid item xs className={dark ? "bar dark" : "bar"}>
@@ -636,7 +636,7 @@ class Home extends Component {
                     </Grid>
                     <Grid item container justify="center" alignItems="center">
                       <Grid item xs={3}>
-                        <Typography variant="body1">React</Typography>
+                        <Typography variant="body1">Spring Boot</Typography>
                       </Grid>
                       <Grid item xs className={dark ? "bar dark" : "bar"}>
                         <div className={this.state.reactclass}></div>
@@ -644,7 +644,7 @@ class Home extends Component {
                     </Grid>
                     <Grid item container justify="center" alignItems="center">
                       <Grid item xs={3}>
-                        <Typography variant="body1">Spring Boot</Typography>
+                        <Typography variant="body1">NodeJS</Typography>
                       </Grid>
                       <Grid item xs className={dark ? "bar dark" : "bar"}>
                         <div className={this.state.djangoclass}></div>
@@ -652,7 +652,7 @@ class Home extends Component {
                     </Grid>
                     <Grid item container justify="center" alignItems="center">
                       <Grid item xs={3}>
-                        <Typography variant="body1">NodeJS</Typography>
+                        <Typography variant="body1">MongoDB</Typography>
                       </Grid>
                       <Grid item xs className={dark ? "bar dark" : "bar"}>
                         <div className={this.state.mysqlclass}></div>
@@ -663,7 +663,7 @@ class Home extends Component {
                     <Grid item direction="column" container xs={12}>
                       <Grid item xs>
                         <Typography variant="body1">
-                          Other technologies I have worked upon{" "}
+                        Programming Languages{" "}
                         </Typography>
                       </Grid>
                       <Grid item container xs style={{ marginTop: "5px" }}>
