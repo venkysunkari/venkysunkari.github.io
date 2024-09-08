@@ -224,7 +224,7 @@ class Home extends Component {
                       <div className={dark ? "s1 dark" : "s1"}>V</div>
                     </div>
                   </Grid>
-                  <Grid item xs={6} sm={6}></Grid>
+                  <Grid item xs={5} sm={5}></Grid> 
                   <Grid
                     item
                     container
