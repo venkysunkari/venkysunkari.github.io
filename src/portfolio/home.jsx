@@ -356,7 +356,7 @@ class Home extends Component {
         size="large"
         onClick={() => {
           window.open(
-            "https://drive.google.com/file/d/1lElGHfZ6bXMc9vOgve3ER8Gkj_EHO8xv/view?usp=sharing"
+            "https://drive.google.com/file/d/1JSWOANQOSNVl3J52_rdo2WYXB3xSntXS/view?usp=sharing"
           );
         }}
         style={dark ? { color: "#64ffda" } : { color: "blue" }}
