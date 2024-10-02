@@ -458,21 +458,19 @@ class Home extends Component {
                   Full Stack Developer, StartHub
                 </Typography>
                 <Typography variant="body2" color="textSecondary">
-                  June 2024 - August 2024
+                  May 2024 - September 2024
                 </Typography>
               </Box>
 
               <Divider style={{ margin: "10px 0" }} />
 
               <Typography variant="body1" component="p" style={{ marginTop: "5px" }}>
-                • Contributing to the development and launch of our platform by building and integrating key features such as Expert-Led Founder Training and Weekly Live Hands-On Workshops.
-                <br />
-                • Manage both frontend and backend tasks, ensuring seamless interaction and a smooth user experience. Set up CI/CD pipelines, conduct thorough testing, and optimize platform performance.
+              Spearheaded the development of some exciting features for our platform, focusing on helping founders learn and grow. We created expert-led training programs and weekly hands-on workshops using React and Node.js, which really boosted user engagement. I wore many hats, handling both front-end and back-end tasks to ensure everything worked together smoothly. Testing was a big priority for me, I made sure we caught any issues early on. The cherry on top was optimizing our platform's performance. By cleverly balancing the workload and fine-tuning our database, we managed to speed things up by a solid 30%. This made a huge difference in how quickly and efficiently our users could access and use the platform.
               </Typography>
             </CardContent>
             <CardActions>
               <WorkIcon color="primary" />
-              <Typography variant="caption">Industry: Tech</Typography>
+              <Typography variant="caption">Industry: Technology</Typography>
             </CardActions>
           </Card>
           <br />
@@ -494,13 +492,7 @@ class Home extends Component {
               <Divider style={{ margin: "10px 0" }} />
 
               <Typography variant="body1" component="p" style={{ marginTop: "5px" }}>
-                • Completed intensive Java Full Stack training covering React, Node, and MongoDB; achieved 100% proficiency among 15 trainees, accelerated project timelines, cut bug count by 30%, and boosted user engagement by 20%.
-                <br />
-                • Developed a React and Spring Boot application for Trinet Global, increasing customer conversion rate by 40% in the first month and boosting user experience by 15%.
-                <br />
-                • Conducted thorough product compatibility testing, resolving issues through rigorous end-user testing, resulting in improved functionality and a 20% increase in customer satisfaction.
-                <br />
-                • Integrated OAuth-based authentication for secure and seamless user login through multiple providers, and built RESTful APIs to streamline data flow and improve system performance.
+                Took on a big project to build a super-fast web app using React and Spring Boot. We used Redux to keep everything organized on the front-end and JPA to talk to the database smoothly. The results were pretty awesome, we saw a 40% jump in customer conversions and made the whole experience 25% better for users. To make things even cooler, we set up some fancy APIs using Spring WebFlux, which made our app super responsive. We also made sure everything was locked down tight with OAuth 2.0 and JWTs, and even added a smart system to prevent overload using Redis. This let users log in with different accounts easily. On the tech side, we set up this great pipeline using Jenkins, Docker, and Kubernetes that automated a lot of our testing and deployment. We cut our release time in half and the quality of our product went way up. Oh, and we did some magic with the database too. We tweaked indexes, optimized queries, and used some clever caching tricks. This made our API responses lightning-fast - 60% faster and we could handle three times as many users at once.
               </Typography>
             </CardContent>
             <CardActions>
@@ -526,16 +518,12 @@ class Home extends Component {
               <Divider style={{ margin: "10px 0" }} />
 
               <Typography variant="body1" component="p" style={{ marginTop: "5px" }}>
-                • Acquired Salesforce Administration skills through training sessions for cross-functional teams, empowering over 20 trainees with essential CRM tools.
-                <br />
-                • Achieved a 25% improvement in data accuracy and boosted system adoption.
-                <br />
-                • Conducted requirement gathering sessions with clients, translating business needs into a Salesforce Field Service solution, optimizing service delivery and reducing response time by 40%.
+                Mastering Salesforce Administration led to significant improvements in team performance and client operations. Comprehensive training sessions for over 20 team members boosted data accuracy by 25% and enhanced system utilization. A customized Salesforce Field Service solution was developed, involving thorough client requirement analysis and implementation of custom Apex triggers and Lightning components. This tailored approach optimized service workflows and reduced response times, showcasing the impact of expert Salesforce administration. The project's success highlighted the value of combining in-depth CRM knowledge with practical application to address specific business needs, ultimately enhancing organizational efficiency and client satisfaction.
               </Typography>
             </CardContent>
             <CardActions>
               <WorkIcon color="primary" />
-              <Typography variant="caption">Industry: CRM</Typography>
+              <Typography variant="caption">Industry: Salesforce CRM</Typography>
             </CardActions>
           </Card>
         </Grid>
