@@ -398,7 +398,7 @@ class Home extends Component {
                 <Grid item xs={12} sm={5}>
                   <Hidden xsDown>
                     <Avatar
-                      src={require("./img.png")}
+                      src={require("./img copy.jpg")}
                       style={{
                         width: "220px",
                         height: "220px",
@@ -408,7 +408,7 @@ class Home extends Component {
                   </Hidden>
                   <Hidden smUp>
                     <Avatar
-                      src={require("./img.png")}
+                      src={require("./img copy.jpg")}
                       style={{
                         width: "220px",
                         height: "220px",
@@ -428,7 +428,7 @@ class Home extends Component {
                       style={dark ? { color: "#64ffda" } : { fontWeight: "bold" }}
                     >
                     </span>
-                    Hi, I’m Venkataramana Sunkari, a Master’s student in Computer Science at UCF, graduating in 2025. With 3 years of full-stack development experience and 6 months in Salesforce consulting, I specialize in building scalable, efficient software solutions. My tech stack includes JavaScript, React, Node.js, Spring Boot, and proficiency in C, C++, Java, and Python. I have developed customer-focused web applications at FamFund and Persistent Systems and boosted platform performance at StartHub. Certified in Azure Data Science (DP-100), I am passionate about solving real-world problems with machine learning, cloud technologies, and REST APIs. I am seeking opportunities to apply my skills and make an impact as a software engineer.
+                    Hi, I’m Venkataramana Sunkari, a Master’s student in Computer Science at UCF, graduating in May 2025. With 3 years of full-stack development experience and 6 months in Salesforce consulting, I specialize in building scalable, efficient software solutions. My tech stack includes JavaScript, React, Node.js, Spring Boot, and proficiency in C, C++, Java, and Python. I have developed customer-focused web applications at FamFund and Persistent Systems and boosted platform performance at StartHub. Certified in Azure Data Science (DP-100), I am passionate about solving real-world problems with machine learning, cloud technologies, and REST APIs. I am seeking opportunities to apply my skills and make an impact as a software engineer.
                   </Typography>
                   </Grid>
             </Grid>
