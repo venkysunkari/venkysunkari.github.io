@@ -356,7 +356,7 @@ class Home extends Component {
         size="large"
         onClick={() => {
           window.open(
-            "https://drive.google.com/file/d/1JSWOANQOSNVl3J52_rdo2WYXB3xSntXS/view?usp=sharing"
+            "https://drive.google.com/file/d/1YwlMpdAQFXyeiC6LAZkkqfkTqoGfnOST/view?usp=sharing"
           );
         }}
         style={dark ? { color: "#64ffda" } : { color: "blue" }}
@@ -384,18 +384,21 @@ class Home extends Component {
                         : { color: "black", fontWeight: "bold" }
                     }
                   >
+                    {" "}
                     About Me
                   </Typography>
-                </Grid>
-                <Grid item xs={12}>
-                  <Divider style={{ margin: "20px 0" }} />
+                  </Grid>
+                <Grid item container xs justify="center" alignItems="center">
+                  <Grid item xs={12}>
+                    <Divider />
+                  </Grid>
                 </Grid>
               </Grid>
               <Grid container>
                 <Grid item xs={12} sm={5}>
                   <Hidden xsDown>
                     <Avatar
-                      src={require("./profile.jpg")}
+                      src={require("./img.png")}
                       style={{
                         width: "220px",
                         height: "220px",
@@ -405,7 +408,7 @@ class Home extends Component {
                   </Hidden>
                   <Hidden smUp>
                     <Avatar
-                      src={require("./profile.jpg")}
+                      src={require("./img.png")}
                       style={{
                         width: "220px",
                         height: "220px",
@@ -425,36 +428,81 @@ class Home extends Component {
                       style={dark ? { color: "#64ffda" } : { fontWeight: "bold" }}
                     >
                     </span>
-                    Hi, I am Venkataramana Sunkari, a Master's student in Computer Science at the University of Central Florida, set to graduate in 2025. With 2 years of experience in full-stack development and 6 months of hands-on Salesforce consulting, I am passionate about creating dynamic, efficient, and scalable software solutions. I have a diverse tech stack that spans JavaScript, React, Node.js, and Spring Boot on the backend, with strong skills in C, C++, Java, and Python.
-                  </Typography>
-
-                  <Typography
-                    variant="body1"
-                    component="p"
-                    style={{ marginTop: "10px" }} // Adjust spacing between paragraphs as needed
-                  >
-                    My journey in software engineering began with self-taught development, and I have since contributed to impactful projects like building customer-focused web applications at Persistent Systems and optimizing platform performance at StartHub. I also hold a DP-100 certification in Azure Data Science and thrive on solving real-world challenges by leveraging machine learning, cloud technologies, and REST APIs. I'm currently seeking exciting opportunities for internships and full-time roles where I can apply my skills and continue to grow as a software engineer.
+                    Hi, I’m Venkataramana Sunkari, a Master’s student in Computer Science at UCF, graduating in 2025. With 3 years of full-stack development experience and 6 months in Salesforce consulting, I specialize in building scalable, efficient software solutions. My tech stack includes JavaScript, React, Node.js, Spring Boot, and proficiency in C, C++, Java, and Python. I have developed customer-focused web applications at FamFund and Persistent Systems and boosted platform performance at StartHub. Certified in Azure Data Science (DP-100), I am passionate about solving real-world problems with machine learning, cloud technologies, and REST APIs. I am seeking opportunities to apply my skills and make an impact as a software engineer.
                   </Typography>
                   </Grid>
             </Grid>
           </div>
-    <Box className="about-me" 
-         data-aos="fade-up"
-         data-aos-duration="300">
-    <Typography variant="h5" style={{ fontWeight: "bold" }}>
-                    Experience
-    </Typography>
 
-      <Grid container spacing={4} style={{ marginTop: "10px" }}>
-        {/* Experience Section on the Left */}
-        <Grid item xs={30} md={20}>
-          {/* First Experience Card */}
+          <div
+              className="skills"
+              data-aos="fade"
+              data-aos-duration="300"
+              ref={this.Skills}
+            >
+              <Grid container>
+                <Grid item xs={4} sm={3}>
+                  <Typography
+                    variant="h4"
+                    style={
+                      dark
+                        ? { color: "white", fontWeight: "bold" }
+                        : { color: "black", fontWeight: "bold" }
+                    }
+                  >
+                    Experience
+                  </Typography>
+                </Grid>
+                <Grid item container xs justify="center" alignItems="center">
+                  <Grid item xs={12}>
+                    <Divider />
+                  </Grid>
+                </Grid>
+              </Grid>
+              <div
+                style={{
+                  transition: "all 0.4s ease",
+                  height: "auto",
+                  width: "auto",
+                }}
+              >
+                <Grid container spacing={4} style={{ marginTop: "6px" }}>
+                  {/* Experience Section on the Left */}
+                  <Grid item xs={30} md={20}>
+                    <br />
+                    <Card
+                      elevation={3}
+
+                    >
+                      <CardContent>
+                        <Box display="flex" justifyContent="space-between" alignItems="center">
+                          <Typography variant="h6" style={{ fontWeight: "bold", fontFamily: "Roboto, Helvetica, Arial, sans-serif" }}>
+                          Software Engineer Intern - FamFund
+                          </Typography>
+                          <Typography variant="body2" color="textSecondary">
+                            <i> September 2024 – Present </i>
+                          </Typography>
+                        </Box>
+
+                        <Divider style={{ margin: "10px 0" }} />
+
+                        <Typography variant="body1" component="p" style={{ marginTop: "5px", fontFamily:"'Segoe UI', Tahoma, Geneva, Verdana, sans-serif", lineHeight: "30px" }} >
+                          Designed back-end systems for FamFund’s financial platform using Node.js and PostgreSQL, focusing on creating secure and scalable RESTful APIs and optimizing database performance to enhance user experience and worked in an Agile environment to develop and deploy key features like peer-to-peer lending modules and financial guidance tools, leveraging AWS services to ensure reliable and efficient deployment while supporting the platform’s mission of financial
+inclusivity.
+                        </Typography>
+                      </CardContent>
+                      <CardActions>
+                        <WorkIcon color="primary" style={{width:"0.8em",height:"0.8em"}} />
+                        <Typography variant="caption"  style={{fontSize:"0.9rem"}}>Industry: Software and Finance</Typography>
+                      </CardActions>
+                    </Card>
+          <br />
           <Card
             elevation={3}
           >
             <CardContent>
               <Box display="flex" justifyContent="space-between" alignItems="center">
-                <Typography variant="h6" style={{ fontWeight: "bold" }}>
+                <Typography variant="h6" style={{ fontWeight: "bold", fontFamily: "Roboto, Helvetica, Arial, sans-serif" }}>
                   Full Stack Developer, StartHub
                 </Typography>
                 <Typography variant="body2" color="textSecondary">
@@ -464,14 +512,14 @@ class Home extends Component {
 
               <Divider style={{ margin: "10px 0" }} />
 
-              <Typography variant="body1" component="p" style={{ marginTop: "5px" }}>
-              Spearheaded the development of some exciting features for our platform, focusing on helping founders learn and grow. We created expert-led training programs and weekly hands-on workshops using React and Node.js, which really boosted user engagement. I wore many hats, handling both front-end and back-end tasks to ensure everything worked together smoothly. Testing was a big priority for me, I made sure we caught any issues early on. The cherry on top was optimizing our platform's performance. By cleverly balancing the workload and fine-tuning our database, we managed to speed things up by a solid 30%. This made a huge difference in how quickly and efficiently our users could access and use the platform.
+              <Typography variant="body1" component="p" style={{ marginTop: "5px" , fontFamily:"'Segoe UI', Tahoma, Geneva, Verdana, sans-serif", lineHeight: "30px"}}>
+              Led the creation of expert-led training programs and hands-on workshops using React and Node.js, significantly increasing user participation. Managed both front-end and back-end development to ensure seamless functionality. Prioritized rigorous testing to catch issues early and optimized database and workload distribution, boosting platform performance by 30%.
               </Typography>
             </CardContent>
             <CardActions>
-              <WorkIcon color="primary" />
-              <Typography variant="caption">Industry: Technology</Typography>
-            </CardActions>
+                        <WorkIcon color="primary" style={{width:"0.8em",height:"0.8em"}} />
+                        <Typography variant="caption"  style={{fontSize:"0.9rem"}}>Industry: Edu Tech Software</Typography>
+                      </CardActions>
           </Card>
           <br />
           {/* Second Experience Card */}
@@ -480,8 +528,8 @@ class Home extends Component {
     
           >
             <CardContent>
-              <Box display="flex" justifyContent="space-between" alignItems="center">
-                <Typography variant="h6" style={{ fontWeight: "bold" }}>
+            <Box display="flex" justifyContent="space-between" alignItems="center">
+                <Typography variant="h6" style={{ fontWeight: "bold", fontFamily: "Roboto, Helvetica, Arial, sans-serif" }}>
                   Software Engineer, Persistent Systems
                 </Typography>
                 <Typography variant="body2" color="textSecondary">
@@ -491,13 +539,14 @@ class Home extends Component {
 
               <Divider style={{ margin: "10px 0" }} />
 
-              <Typography variant="body1" component="p" style={{ marginTop: "5px" }}>
-                Took on a big project to build a super-fast web app using React and Spring Boot. We used Redux to keep everything organized on the front-end and JPA to talk to the database smoothly. The results were pretty awesome, we saw a 40% jump in customer conversions and made the whole experience 25% better for users. To make things even cooler, we set up some fancy APIs using Spring WebFlux, which made our app super responsive. We also made sure everything was locked down tight with OAuth 2.0 and JWTs, and even added a smart system to prevent overload using Redis. This let users log in with different accounts easily. On the tech side, we set up this great pipeline using Jenkins, Docker, and Kubernetes that automated a lot of our testing and deployment. We cut our release time in half and the quality of our product went way up. Oh, and we did some magic with the database too. We tweaked indexes, optimized queries, and used some clever caching tricks. This made our API responses lightning-fast - 60% faster and we could handle three times as many users at once.
+              <Typography variant="body1" component="p" style={{ marginTop: "5px" , fontFamily:"'Segoe UI', Tahoma, Geneva, Verdana, sans-serif", lineHeight: "30px"}}>
+              Built the application with Redux for front-end state management and JPA for smooth database communication. Achieved a 40% increase in customer conversions and improved user experience by 25%. Enhanced responsiveness with Spring WebFlux and ensured security with OAuth 2.0 and JWTs. Implemented Redis for load management and seamless multi-account logins.
+      Streamlined testing and deployment with Jenkins, Docker, and Kubernetes, reducing release time by 50% and improving product quality. Optimized database performance by refining indexes, queries, and caching, resulting in 60% faster API responses and tripling user capacity.
               </Typography>
             </CardContent>
             <CardActions>
-              <WorkIcon color="primary" />
-              <Typography variant="caption">Industry: Software</Typography>
+            <WorkIcon color="primary" style={{width:"0.8em",height:"0.8em"}} />
+                        <Typography variant="caption"  style={{fontSize:"0.9rem"}}>Industry: Software</Typography>
             </CardActions>
           </Card>
           <br />
@@ -506,8 +555,8 @@ class Home extends Component {
             elevation={3}
           >
             <CardContent>
-              <Box display="flex" justifyContent="space-between" alignItems="center">
-                <Typography variant="h6" style={{ fontWeight: "bold" }}>
+            <Box display="flex" justifyContent="space-between" alignItems="center">
+                <Typography variant="h6" style={{ fontWeight: "bold", fontFamily: "Roboto, Helvetica, Arial, sans-serif" }}>
                   Salesforce Consultant, Diabsolut Technology Pvt. Ltd
                 </Typography>
                 <Typography variant="body2" color="textSecondary">
@@ -517,23 +566,25 @@ class Home extends Component {
 
               <Divider style={{ margin: "10px 0" }} />
 
-              <Typography variant="body1" component="p" style={{ marginTop: "5px" }}>
+              <Typography variant="body1" component="p" style={{ marginTop: "5px" , fontFamily:"'Segoe UI', Tahoma, Geneva, Verdana, sans-serif", lineHeight: "30px"}}>
                 Mastering Salesforce Administration led to significant improvements in team performance and client operations. Comprehensive training sessions for over 20 team members boosted data accuracy by 25% and enhanced system utilization. A customized Salesforce Field Service solution was developed, involving thorough client requirement analysis and implementation of custom Apex triggers and Lightning components. This tailored approach optimized service workflows and reduced response times, showcasing the impact of expert Salesforce administration. The project's success highlighted the value of combining in-depth CRM knowledge with practical application to address specific business needs, ultimately enhancing organizational efficiency and client satisfaction.
               </Typography>
             </CardContent>
             <CardActions>
-              <WorkIcon color="primary" />
-              <Typography variant="caption">Industry: Salesforce CRM</Typography>
+            <WorkIcon color="primary" style={{width:"0.8em",height:"0.8em"}} />
+                        <Typography variant="caption"  style={{fontSize:"0.9rem"}}>Industry: Salesforce CRM</Typography>
             </CardActions>
           </Card>
-        </Grid>
-      </Grid>
-    </Box>
+          </Grid>
+                </Grid>
+              </div>
+            </div>
+            <br />
 
             <div
               className="skills"
               data-aos="fade"
-              data-aos-duration="500"
+              data-aos-duration="300"
               ref={this.Skills}
             >
               <Grid container>
@@ -572,8 +623,8 @@ class Home extends Component {
                       justify="center"
                       alignItems="center"
                     >
-                      <Grid item xs marginTop= "2px" >
-                        <br />
+                      <Grid item xs>
+                      <br />
                         <List>
                           {["C/C++", "Java", "Python", "MySQL, MongoDB", "Salesforce, AWS, Azure, GIT"].map((e) => (
                             <ListItem>
@@ -836,7 +887,7 @@ class Home extends Component {
                     style={{ transition: "all 0.4s ease-in-out" }}
                   >
                     <CardMedia
-                      image={require("./f2c.jpg")}
+                      image={require("./f2c copy.jpg")}
                       style={{ width: "100%", height: "50%" }}
                     />
                     <CardContent>
