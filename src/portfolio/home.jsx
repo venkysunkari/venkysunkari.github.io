@@ -316,21 +316,22 @@ class Home extends Component {
                 variant="subtitle1"
                 style={dark ? { color: "#64ffda" } : { color: "red" }}
               >
-                <br />
+              <br />
                 <br />
                 Hi. I'm
               </Typography>
-              <Typography variant="h2">Venkataramana Sunkari</Typography>
-              <Typography variant="h3" color="textSecondary">
-                I build things with passion for the web
+              <Typography variant="h3">Venkataramana Sunkari</Typography>
+              <Typography variant="h5" color="textSecondary">
+                Dedicated to creating scalable, innovative, and user-focused software solutions.
               </Typography>
             </div>
             <div className="intro-para" data-aos="fade" data-aos-delay="300">
               <Typography variant="h6">
                 I'm a self taught full stack developer.
               </Typography>
-              <br />
+              
               <div>
+            
   <Grid
     container
     spacing={2} // Space between buttons
@@ -367,6 +368,7 @@ class Home extends Component {
   </Grid>
 </div>
             </div> 
+            <br />
             {/*ventttttttttt*/}
             <div
               className="about-me"
@@ -477,7 +479,7 @@ class Home extends Component {
                       <CardContent>
                         <Box display="flex" justifyContent="space-between" alignItems="center">
                           <Typography variant="h6" style={{ fontWeight: "bold", fontFamily: "Roboto, Helvetica, Arial, sans-serif" }}>
-                          Software Engineer Intern - FamFund
+                          Software Engineer Intern, FamFund
                           </Typography>
                           <Typography variant="body2" color="textSecondary">
                             <i> September 2024 – Present </i>
@@ -578,7 +580,7 @@ inclusivity.
           </Grid>
                 </Grid>
               </div>
-            </div>
+              </div>
             <br />
 
             <div
