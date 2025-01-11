@@ -327,9 +327,8 @@ class Home extends Component {
             </div>
             <div className="intro-para" data-aos="fade" data-aos-delay="300">
               <Typography variant="h6">
-                I'm a self taught full stack developer.
+                I'm a self taught Full Stack Developer.
               </Typography>
-              
               <div>
             
   <Grid
@@ -569,8 +568,8 @@ inclusivity.
               <Divider style={{ margin: "10px 0" }} />
 
               <Typography variant="body1" component="p" style={{ marginTop: "5px" , fontFamily:"'Segoe UI', Tahoma, Geneva, Verdana, sans-serif", lineHeight: "30px"}}>
-                Mastering Salesforce Administration led to significant improvements in team performance and client operations. Comprehensive training sessions for over 20 team members boosted data accuracy by 25% and enhanced system utilization. A customized Salesforce Field Service solution was developed, involving thorough client requirement analysis and implementation of custom Apex triggers and Lightning components. This tailored approach optimized service workflows and reduced response times, showcasing the impact of expert Salesforce administration. The project's success highlighted the value of combining in-depth CRM knowledge with practical application to address specific business needs, ultimately enhancing organizational efficiency and client satisfaction.
-              </Typography>
+              Mastering Salesforce Administration significantly improved team performance and client operations. Training 20+ team members increased data accuracy by 25% and optimized system use. Developing a customized Salesforce Field Service solution with Apex triggers and Lightning components streamlined workflows, reduced response times, and enhanced client satisfaction. This success underscores the impact of tailored CRM solutions on efficiency and business outcomes.
+                </Typography>
             </CardContent>
             <CardActions>
             <WorkIcon color="primary" style={{width:"0.8em",height:"0.8em"}} />
@@ -1203,7 +1202,7 @@ inclusivity.
                     <IconButton
                       onClick={() => {
                         window.open(
-                          "https://www.linkedin.com/in/venky-sunkari",
+                          "https://www.linkedin.com/in/venkataramana-s",
                           "_blank"
                         );
                       }}
@@ -1259,7 +1258,7 @@ inclusivity.
                     <IconButton
                       onClick={() => {
                         window.open(
-                          "https://www.linkedin.com/in/venky-sunkari",
+                          "https://www.linkedin.com/in/venkataramana-s",
                           "_blank"
                         );
                       }}
