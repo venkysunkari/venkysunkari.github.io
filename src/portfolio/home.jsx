@@ -471,58 +471,7 @@ class Home extends Component {
                   {/* Experience Section on the Left */}
                   <Grid item xs={30} md={20}>
                     <br />
-                    <Card
-                      elevation={3}
-
-                    >
-                      <CardContent>
-                        <Box display="flex" justifyContent="space-between" alignItems="center">
-                          <Typography variant="h6" style={{ fontWeight: "bold", fontFamily: "Roboto, Helvetica, Arial, sans-serif" }}>
-                          Software Engineer Intern, FamFund
-                          </Typography>
-                          <Typography variant="body2" color="textSecondary">
-                            <i> September 2024 – Present </i>
-                          </Typography>
-                        </Box>
-
-                        <Divider style={{ margin: "10px 0" }} />
-
-                        <Typography variant="body1" component="p" style={{ marginTop: "5px", fontFamily:"'Segoe UI', Tahoma, Geneva, Verdana, sans-serif", lineHeight: "30px" }} >
-                          Designed back-end systems for FamFund’s financial platform using Node.js and PostgreSQL, focusing on creating secure and scalable RESTful APIs and optimizing database performance to enhance user experience and worked in an Agile environment to develop and deploy key features like peer-to-peer lending modules and financial guidance tools, leveraging AWS services to ensure reliable and efficient deployment while supporting the platform’s mission of financial
-inclusivity.
-                        </Typography>
-                      </CardContent>
-                      <CardActions>
-                        <WorkIcon color="primary" style={{width:"0.8em",height:"0.8em"}} />
-                        <Typography variant="caption"  style={{fontSize:"0.9rem"}}>Industry: Software and Finance</Typography>
-                      </CardActions>
-                    </Card>
-          <br />
-          <Card
-            elevation={3}
-          >
-            <CardContent>
-              <Box display="flex" justifyContent="space-between" alignItems="center">
-                <Typography variant="h6" style={{ fontWeight: "bold", fontFamily: "Roboto, Helvetica, Arial, sans-serif" }}>
-                  Full Stack Developer, StartHub
-                </Typography>
-                <Typography variant="body2" color="textSecondary">
-                  May 2024 - September 2024
-                </Typography>
-              </Box>
-
-              <Divider style={{ margin: "10px 0" }} />
-
-              <Typography variant="body1" component="p" style={{ marginTop: "5px" , fontFamily:"'Segoe UI', Tahoma, Geneva, Verdana, sans-serif", lineHeight: "30px"}}>
-              Led the creation of expert-led training programs and hands-on workshops using React and Node.js, significantly increasing user participation. Managed both front-end and back-end development to ensure seamless functionality. Prioritized rigorous testing to catch issues early and optimized database and workload distribution, boosting platform performance by 30%.
-              </Typography>
-            </CardContent>
-            <CardActions>
-                        <WorkIcon color="primary" style={{width:"0.8em",height:"0.8em"}} />
-                        <Typography variant="caption"  style={{fontSize:"0.9rem"}}>Industry: Edu Tech Software</Typography>
-                      </CardActions>
-          </Card>
-          <br />
+        
           {/* Second Experience Card */}
           <Card
             elevation={3}
